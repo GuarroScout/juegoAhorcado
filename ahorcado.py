@@ -28,7 +28,8 @@ def read():
     # add = input("Ingresa una letra: ")
     # print(add)
 
-
+    import os
+    os.system('clear')
 
 def run():
     read()
