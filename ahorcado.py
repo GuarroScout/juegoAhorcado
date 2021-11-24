@@ -36,9 +36,7 @@ def read():
         ahorcad_2.append(i)
 
     # Desarrollo del error
-    #import os
     print('hide_word_2: ', hide_word_2)
-    print('ahorcad_2: ', ahorcad_2)
     while hide_word_2 != ahorcad_2:
 
         try: 
@@ -47,24 +45,17 @@ def read():
             assert add.islower()
             paso = -1
 
-
             for i in ahorcad_2:
-                #print(i)
                 paso = paso + 1
-                #print('paso', paso)
                 if i == add:
-                    #print(i)
-                    #print(add)
                     hide_word_2.pop(paso)
                     hide_word_2.insert(paso, add)
-                    #print(hide_word_2)              
+                import os
+                os.system('clear')              
         except AssertionError:
             print("Solo se aceptan letras")
         print(hide_word_2)
-        print(ahorcad_2)
     print("¡Lo has logrado! La palabra era " + ahorcad)      
-            
-            #os.system('clear')
     
 def run():
     read()
