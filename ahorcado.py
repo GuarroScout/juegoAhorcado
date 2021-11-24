@@ -25,24 +25,21 @@ def read():
 
     list(hide_word)
     list(ahorcad)
-    caracteres_validos = ['a', 'á', 'b', 'c', 'd', 'e', 'é', 
-                          'f', 'g', 'h', 'i', 'í', 'j', 'k',
-                          'l', 'm', 'n', 'ñ', 'o', 'ó', 'p',
-                          'q', 'r', 's', 't', 'u', 'ú', 'v',
-                          'w', 'x', 'y', 'z']
+
     # Desarrollo del error
     # while hide_word != ahorcad:
-    
+
     try: 
         add = input("Ingresa una letra: ")
         add = add.lower()
         assert add.islower()
+        
     except AssertionError:
         print("Solo se aceptan letras")
     
     # import os
     # os.system('clear')
-
+    
 def run():
     read()
 
