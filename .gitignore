@@ -128,5 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Archivo de Python solo para experimentos
+# Archivo de Python solo para experimentos, no tomar en cuenta
 pruebas.py
